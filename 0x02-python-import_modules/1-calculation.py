@@ -3,12 +3,6 @@ from calculator_1 import add, sub, mul, div
 
 
 def main():
-    """My main function
-
-    Returns:
-        print each result
-    """
-
     a = 10
     b = 5
     print("{} + {} = {}".format(a, b, add(a, b)))
