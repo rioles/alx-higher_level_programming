@@ -15,4 +15,5 @@ def no_c(my_string):
 
 
     my_string_without_c = [j for j in my_string if j!= "c" and j !="C"]
+
     return ("".join(my_string_without_c))
