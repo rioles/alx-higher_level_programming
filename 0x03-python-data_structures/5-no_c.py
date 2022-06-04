@@ -5,15 +5,10 @@ def no_c(my_string):
     ...
     Parameters
     ----------
-
     my_string : str
         The string to remove 'Cc' from
-
     Return:
         The new string
     """
 
-
-    my_string_without_c = [j for j in my_string if j!= "c" and j !="C"]
-
-    return ("".join(my_string_without_c))
+    return ("".join([c for c in my_string if c not in ['c', 'C']]))
