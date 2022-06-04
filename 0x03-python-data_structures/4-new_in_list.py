@@ -15,12 +15,8 @@ def new_in_list(my_list, idx, element):
         if idx out of range (> len(my_list))
     """
 
-    my_list_copy = []
+    list_copy = my_list.copy()
 
-    for element_list in my_list:
-        my_list_copy.append(element_list)
-    
     if idx >= 0 and idx <= (len(my_list) - 1):
-        my_list_copy[idx] = element
-    
-    return my_list_copy
+        list_copy[idx] = element
+    return list_copy
