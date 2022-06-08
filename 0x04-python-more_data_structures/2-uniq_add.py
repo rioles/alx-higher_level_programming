@@ -11,4 +11,9 @@ def uniq_add(my_list=[]):
     Return:
         The sum of all unique integer in a list
     """
-    return sum(set(my_list))
+    unique_value = {}
+    for i in my_list:
+        if i in unique_value:
+            continue
+        unique_value[i] = True
+    return sum(unique_value)
