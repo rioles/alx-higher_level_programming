@@ -10,10 +10,11 @@ def square_matrix_simple(matrix=[]):
     Return:
         square value of all integers of a matrix.
     """
-    
+
     square_matrice = []
 
     for i in matrix:
         square_matrice.append(list(map(lambda x : x * x, i)))
 
     return (square_matrice)
+
