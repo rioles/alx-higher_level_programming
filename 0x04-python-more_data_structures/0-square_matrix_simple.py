@@ -1,0 +1,21 @@
+def square_matrix_simple(matrix=[]):
+
+    """
+    Computes the square value of all integers of a matrix.
+    ...
+    Parameters
+    ----------
+    matrix : 2 dimensional array
+        The list to treat
+    Return:
+        square value of all integers of a matrix.
+    """
+    
+    square_matrice = []
+
+    for i in matrix:
+        square_matrice.append(list(map(lambda x : x ** 2, i)))
+
+    return (square_matrice)
+
+
