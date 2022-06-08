@@ -14,7 +14,7 @@ def square_matrix_simple(matrix=[]):
     square_matrice = []
 
     for i in matrix:
-        square_matrice.append(list(map(lambda x : x ** 2, i)))
+        square_matrice.append(list(map(lambda x : x * x, i)))
 
     return (square_matrice)
 
