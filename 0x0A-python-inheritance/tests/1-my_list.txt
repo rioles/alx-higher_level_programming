@@ -41,7 +41,8 @@ Instantiation
 >>> my_list.print_sorted()
 [-8, -7, -4, -2, -1]
 
-my_list = MyList()
+>>> del my_list
+>>> my_list = MyList()
 >>> my_list.append("Alx")
 >>> my_list.append("Holberton")
 >>> my_list.append("is")
