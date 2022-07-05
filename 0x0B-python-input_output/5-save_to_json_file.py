@@ -1,6 +1,6 @@
-#!/usr/bin/pyhon3
+#!/usr/bin/python3
 # 5-save_to_json_file.py
-
+# Brennan D Baraban <375@holbertonschool.com>
 """Defines a JSON file-writing function."""
 import json
 
