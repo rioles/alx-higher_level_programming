@@ -1,18 +1,7 @@
 #!/usr/bin/python3
-"""Defines unittests for models/rectangle.py.
+# test_rectangle.py
 
-Unittest classes:
-    TestRectangle_instantiation - line 23
-    TestRectangle_width - line 112
-    TestRectangle_height - line 188
-    TestRectangle_x - line 260
-    TestRectangle_y - line 332
-    TestRectangle_order_of_initialization - line 400
-    TestRectangle_area - line 428
-    TestRectangle_update_args - line 536
-    TestRectangle_update_kwargs - line 674
-    TestRectangle_to_dictionary - line 786
-"""
+"""Define unittests for models/rectangle.py."""
 import io
 import sys
 import unittest
@@ -22,9 +11,8 @@ from models.rectangle import Rectangle
 
 class TestRectangle_instantiation(unittest.TestCase):
     """Unittests for testing instantiation of the Rectangle class."""
-
-    def test_rectangle_is_base(self):
-        self.assertIsInstance(Rectangle(10, 2), Base)
+    def test_is_rectangle_base(self):
+        self.assertIsInstance(Rectangle(100, 50), Base)
 
     def test_no_args(self):
         with self.assertRaises(TypeError):
@@ -454,7 +442,6 @@ class TestRectangle_stdout(unittest.TestCase):
     @staticmethod
     def capture_stdout(rect, method):
         """Captures and returns text printed to stdout.
-
         Args:
             rect (Rectangle): The Rectangle to print to stdout.
             method (str): The method to run on rect.
@@ -801,6 +788,7 @@ class TestRectangle_to_dictionary(unittest.TestCase):
         r = Rectangle(10, 2, 4, 1, 2)
         with self.assertRaises(TypeError):
             r.to_dictionary(1)
+
 
 if __name__ == "__main__":
     unittest.main()
